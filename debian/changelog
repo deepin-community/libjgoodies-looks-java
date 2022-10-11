@@ -1,0 +1,215 @@
+libjgoodies-looks-java (2.7.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Disabled the Windows L&F to fix the build failure with Java 10
+    (Closes: #898906)
+  * Standards-Version updated to 4.1.4
+  * Switch to debhelper level 11
+  * Use salsa.debian.org Vcs-* URLs
+  * Updated the Homepage field
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 17 May 2018 12:43:22 +0200
+
+libjgoodies-looks-java (2.7.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- tony mancill <tmancill@debian.org>  Fri, 25 Nov 2016 11:10:18 -0800
+
+libjgoodies-looks-java (2.7.0-1) experimental; urgency=medium
+
+  * New upstream release. (Closes: #819670)
+  * Build-Depends on libjgoodies-commons-java >= 1.8.1, debhelper >= 10.
+  * Update debian/compat to 10.
+  * Drop unneeded debian/patches.
+  * Update Standards-Version to 3.9.8.
+  * Use --no-parent to ignore parent pom.
+  * Update debian/copyright for new upstream version.
+  * Drop build-dep on CDBS; use debhelper for all build sequencing.
+
+ -- tony mancill <tmancill@debian.org>  Sun, 06 Nov 2016 13:33:30 -0800
+
+libjgoodies-looks-java (2.5.2-3) unstable; urgency=low
+
+  * Add javahelper.mk to d/rules.
+  * Add jgoodies-common to the manifest via classpath file. 
+    (Closes: #709002)
+
+ -- tony mancill <tmancill@debian.org>  Sun, 02 Jun 2013 08:36:43 -0700
+
+libjgoodies-looks-java (2.5.2-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Update debian/watch with version provided by Bart Martens.
+    (Thank you also to gregor herrmann for his update.)
+
+ -- tony mancill <tmancill@debian.org>  Wed, 08 May 2013 20:35:51 -0700
+
+libjgoodies-looks-java (2.5.2-1) experimental; urgency=low
+
+  * New upstream release (Closes: #690222)
+  * Rework build system for maven.
+  * Bump Standards-Version to 3.9.4 (no changes).
+  * Bump build dependency on libjgoodies-common-java to >= 1.4.0.
+
+ -- tony mancill <tmancill@debian.org>  Sat, 24 Nov 2012 14:50:35 -0800
+
+libjgoodies-looks-java (2.5.0-2) unstable; urgency=low
+
+  * Update Vcs-* headers.
+  * Update Maintainer field for Java team maintenance.
+  * Add gregor to Uploaders.
+  * Set Standards-Version to 3.9.3 (no changes).
+
+ -- tony mancill <tmancill@debian.org>  Tue, 29 May 2012 17:35:56 -0700
+
+libjgoodies-looks-java (2.5.0-1) unstable; urgency=low
+
+  * Update Vcs-* headers.
+  * New upstream release.
+  * Update years of upstream and packaging copyright.
+  * Refresh debian_libs.patch.
+  * Bump build dependency on libjgoodies-common-java to >= 1.3.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2012 21:19:57 +0100
+
+libjgoodies-looks-java (2.4.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh patches.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 10 Aug 2011 19:11:20 +0200
+
+libjgoodies-looks-java (2.4.1-2) unstable; urgency=low
+
+  * Fix Document field in .doc-base file; thanks to Ralf Treinen for the bug
+    report (closes: #623510).
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 20 Apr 2011 22:20:33 +0200
+
+libjgoodies-looks-java (2.4.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set Standards-Version to 3.9.2 (no changes).
+  * Make build dependency on libjgoodies-common-java versioned.
+  * Bump debhelper compatibility level to 8.
+  * Register API docs with docbase system.
+  * debian/copyright: update years of upstream and packaging copyright.
+  * Update patch debian_libs.patch.
+  * debian/control: remove dependency on JRE, as suggested by lintian and
+    allowed by Java Policy.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 18 Apr 2011 21:09:59 +0200
+
+libjgoodies-looks-java (2.4.0-2) unstable; urgency=low
+
+  * Add build dependency on javahelper.
+  * Add ${java:Depends} to debian/control Depends.
+
+ -- tony mancill <tmancill@debian.org>  Tue, 22 Feb 2011 20:47:51 -0800
+
+libjgoodies-looks-java (2.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: change build dependency from default-jdk-builddep to
+    default-jdk.
+  * Switch to source format 3.0 (quilt).
+  * Set Standards-Version to 3.9.1 (no changes).
+  * Add new build dependency: libjgoodies-common-java.
+  * debian/copyright: update years of upstream copyright.
+  * Remove 02_windows.patch.
+  * New patch debian_libs.patch: use Debian libraries
+    (libjgoodies-common-java.) instead of shipped pre-compiled ones.
+  * Rename and refresh remaining patches.
+  * Install all .jars, add a .links file for a compatibility symlink to the
+    old name of the main lib.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 19 Feb 2011 13:46:35 +0100
+
+libjgoodies-looks-java (2.3.1-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/watch: tighten regexp to ignore beta releases.
+  * debian/copyright: update formatting and years of packaging copyright.
+  * debian/compat: bump to 7.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 17 Jan 2010 18:10:04 +0100
+
+libjgoodies-looks-java (2.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: don't point to the BSD license in
+    /usr/share/common-licenses/BSD ("The Regents of the University of
+    California") after quoting the correct complete license.
+  * Refresh 02_windows.patch.
+  * Set Standards-Version to 3.8.3 (no changes).
+  * Minimize debian/rules, bump debhelper and quilt build dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 24 Sep 2009 21:42:21 +0200
+
+libjgoodies-looks-java (2.2.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: set Section to java.
+  * Refresh 02_windows.patch.
+  * Set Standards-Version to 3.8.1 (no changes).
+  * Remove unneeded debian/dirs.
+  * debian/copyright: update years of upstream and packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 07 May 2009 18:00:47 +0200
+
+libjgoodies-looks-java (2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh 02_windows.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 19 Oct 2008 20:47:44 +0200
+
+libjgoodies-looks-java (2.2.0-2) unstable; urgency=low
+
+  * Relax run-time dependency to "default-jre-headless |
+    java-runtime-headless", thanks to Pascal A. Dupuis for reporting the
+    problem (closes: #497946).
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 05 Sep 2008 17:44:03 +0200
+
+libjgoodies-looks-java (2.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Install RELEASE-NOTES.txt as upstream changelog.
+  * Don't use packaged docs but rebuild them; add patch 04_javadoc to keep the
+    javadocs target from fetching stuff from the web.
+  * Move upstream URL from the description to the new Homepage field.
+  * Change XS-Vcs-* fields to Vcs-*.
+  * Change debian/copyright to the new machine-readable format and
+    debian/copyright: update years of upstream and packaging copyright.
+  * Change patch system from dpatch to quilt.
+  * Set Standards-Version to 3.8.0; add debian/README.source to document
+    quilt usage.
+  * debian/control: change my email address.
+  * Clean up debian/rules; create install-stamp target and adjust target
+    dependencies.
+  * Change (build) dependency to default-jre-headless and
+    default-jdk-builddep; set JAVA_HOME in debian/rules accordingly.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 02 Sep 2008 19:10:12 +0200
+
+libjgoodies-looks-java (2.1.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Adapt debian/patches/02_windows.
+  * Improve package description in debian/control.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Fri, 25 May 2007 23:38:16 +0200
+
+libjgoodies-looks-java (2.1.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Mon, 26 Feb 2007 22:16:09 +0100
+
+libjgoodies-looks-java (2.1.1-1) unstable; urgency=low
+
+  * Initial release (closes: #404510).
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Mon, 25 Dec 2006 22:22:00 +0100

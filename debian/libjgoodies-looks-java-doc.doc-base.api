@@ -1,0 +1,8 @@
+Document: libjgoodies-looks-java
+Title: JGoodies Looks API Documentation
+Abstract: Javadocs containing the JGoodies Looks API documentation.
+Section: Programming/Java
+
+Format: HTML
+Index: /usr/share/doc/libjgoodies-looks-java/api/index.html
+Files: /usr/share/doc/libjgoodies-looks-java/api/*.html

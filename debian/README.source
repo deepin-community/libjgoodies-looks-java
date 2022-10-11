@@ -1,0 +1,22 @@
+Information about libjgoodies-looks-java
+----------------------------------------
+
+The 2.7.0 upstream tarball was constructed from the POM file,
+sources.jar and javadoc.jar published on Maven Central.
+
+http://repo1.maven.org/maven2/com/jgoodies/jgoodies-looks/2.7.0/
+
+That is:
+
+mkdir jgoodies-looks-2.7.0 && cd jgoodies-looks-2.7.0
+mv /path/to/jgoodies-looks-2.7.0.pom ./pom.xml
+
+mkdir -p src/main/java && cd src/main/java
+jar xf /path/to/jgoodies-looks-2.7.0-sources.jar
+
+cd ../../..
+
+mkdir -p docs/api && cd docs/api
+jar xf /path/to/jgoodies-looks-2.7.0-javadoc.jar
+
+cd .. && tar cjf libjgoodies-looks-java_2.7.0.orig.tar.xz jgoodies-looks-2.7.0
